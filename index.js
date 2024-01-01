@@ -122,7 +122,7 @@ int main()
 
 const dotenv=require('dotenv');
 dotenv.config();
-
+console.log(process.env.BOT_TOKEN);
 const axios = require('axios');
 const { Telegraf } = require('telegraf');
 const bot = new Telegraf(process.env.BOT_TOKEN);
